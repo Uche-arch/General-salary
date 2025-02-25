@@ -4,14 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="./bootstrap-aid/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="./bootstrap-aid/css/bootstrap.min.css" />
   </head>
   <body>
-<div class="container">
-    <!-- <h1>Welcome to your salary tracker😁!</h1>
+    <div class="container">
+      <!-- <h1>Welcome to your salary tracker😁!</h1>
       <p>See how your earnings stack up, and update your details anytime!</p>
       <form action="" id="salary-form">
         <label for="">Enter your name:</label>
@@ -21,43 +18,46 @@
         <button type="submit">Add</button>
       </form> -->
 
-
-    <h1 class="mb-3 mb-md-5 text-center">SALARY LEDGER</h1>
-
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Salary</th>
-          <th>Date</th>
-        </tr>
-      </thead>
-      <tbody id="table-body">
-        <tr>
-          <td>Uche Godswill - CEO</td>
-          <td id="ceo-amount"></td>
-          <td>2025-2-25</td>
-        </tr>
-      </tbody>
-    </table>
-    <br /><br />
-    <h2>New Entries</h2>
-    <label for="">New Worker</label>
-    <input type="text" id="name" class="form-control" placeholder="Worker's name"/><br />
-    <label for="" class="form-label">
-      Salary 
-    </label>
-    <input
-      type="number"
-      id="salary"
-      class="form-control"
-      placeholder="Enter salary"
-    />
-    <button onclick="update()" class="btn btn-outline-primary mt-3">
-      Add
-    </button>
-    <p id="error" class="mt-2 mt-md-4"></p>
-</div>
+      <h1 class="mb-3 mb-md-5 text-center">SALARY LEDGER</h1>
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Salary</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+            <tr>
+              <td>Uche Godswill - CEO</td>
+              <td id="ceo-amount"></td>
+              <td>2025-2-25</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br /><br />
+      <h2>New Entries</h2>
+      <label for="">New Worker</label>
+      <input
+        type="text"
+        id="name"
+        class="form-control"
+        placeholder="Worker's name"
+      /><br />
+      <label for="" class="form-label"> Salary </label>
+      <input
+        type="number"
+        id="salary"
+        class="form-control"
+        placeholder="Enter salary"
+      />
+      <button onclick="update()" class="btn btn-outline-primary mt-3">
+        Add
+      </button>
+      <p id="error" class="mt-2 mt-md-4"></p>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
