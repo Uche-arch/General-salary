@@ -26,13 +26,15 @@
             </tr>
           </thead>
           <tbody id="table-body">
-            <tr>
+            <!-- <tr>
               <td contenteditable="true">Uche Godswill - CEO</td>
               <td id="ceo-amount"></td>
               <td>2025-2-25</td>
-            </tr>
+            </tr> -->
           </tbody>
         </table>
+         <!-- <button onclick="showSalary()">Total</button> -->
+        <div id="total-salary">Total Salary: ₦</div>
       </div>
       <br /><br />
       <h2>New Entries</h2>
@@ -50,9 +52,12 @@
         class="form-control"
         placeholder="Enter salary"
       />
-      <button onclick="update()" class="btn btn-outline-primary mt-3">
+      <div class="d-flex align-item-center gap-4 mt-3">
+      <button onclick="update()" class="btn btn-outline-primary">
         Add
       </button>
+      <button onclick="save()" id="save-button">Save</button>
+      </div>
       <p id="error" class="mt-2 mt-md-4"></p>
     </div>
     <script src="index.js"></script>
